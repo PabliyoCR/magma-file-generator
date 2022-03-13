@@ -1,0 +1,5 @@
+<div class="editor">
+    <ngx-blockly [config]="config" (javascriptCode)="onCode($event)" [customBlocks]="customBlocks">
+    </ngx-blockly>
+    <section app-preview class="preview" [element]="elementSelected" (toPrint)="toPrint()"></section>
+</div>
